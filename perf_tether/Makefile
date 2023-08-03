@@ -2,7 +2,7 @@
 RMNET_PERF_TETHER_SELECT := CONFIG_RMNET_PERF_TETHER=m
 KBUILD_OPTIONS += $(RMNET_PERF_TETHER_SELECT)
 KBUILD_OPTIONS += $(KBUILD_EXTRA) # Extra config if any
-KBUILD_EXTRA_SYMBOLS := $(M)/../../$(DATARMNET_CORE_PATH)/Module.symvers
+KBUILD_EXTRA_SYMBOLS := $(OUT_DIR)/../../vendor/qcom/opensource/datarmnet/core/Module.symvers
 
 M ?= $(shell pwd)
 
